@@ -407,6 +407,7 @@ main .info .quantity {
 
 main .info .quantity .quantBtn {
   border: none;
+  background-color: white;
 }
 
 main .info .quantity .quantInput {
