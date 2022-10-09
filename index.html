@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce | Alucard2169</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./script/app.js" defer></script>
+</head>
+<body>
+    <div class="overflow" id="overflow"></div>
+    <header>
+        <!-- mobile -->
+        <nav class="mobileNav">
+            <div class="mobileMenu"  id="mobMenu">
+                <img src="./images/icon-close.svg" alt="close menu" class="closeIcon" id="closeMobileMenu">
+               <ul>
+                    <li class="items"><a href="#">Collections</a></li>
+                    <li class="items"><a href="#">Men</a></li>
+                    <li class="items"><a href="#">Women</a></li>
+                    <li class="items"><a href="#">About</a></li>
+                    <li class="items"><a href="#">Contact</a></li>
+               </ul>
+            </div>
+            <div class="leftSection">
+                <img src="./images/icon-menu.svg" alt="menu" class="menuIcon" id="openMobileMenu">
+                <img src="./images/logo.svg" class="siteName" alt="">
+                <!--desktop-->
+                <ul class="desktopMenu">
+                    <li class="items"><a href="#">Collections</a></li>
+                    <li class="items"><a href="#">Men</a></li>
+                    <li class="items"><a href="#">Women</a></li>
+                    <li class="items"><a href="#">About</a></li>
+                    <li class="items"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="rightSection">
+                <div class="cartIcon">
+                    <img src="./images/icon-cart.svg" alt="cart" class="cart" id="cart">
+                    <span class="total" id="prodCount">0</span>
+                </div>
+                <img src="./images/image-avatar.png" alt="profile Photo" class="pfp">
+            </div>
+            <aside class="cartSection" id="cartSect">
+                <div class="top"><p>Cart</p></div>
+                <div class="items" id="itemSection"><p class="emptytext" id="empty">Your Cart is empty</p>
+                </div>
+                <button class="checkout" id="checkBtn">Checkout</button>
+            </aside>
+        </nav>
+    </header>
+    <main>
+        <div class="imageSection">
+            <img src="./images/image-product-1.jpg" alt="one" class="prodImage" id="prodImage">
+            <div class="navigationButtons">
+                <button class="navBtn" id="leftButton"><img src="./images/icon-previous.svg" alt="previous"></button>
+                <button class="navBtn" id="rightButton"><img src="./images/icon-next.svg" alt="next"></button>
+            </div>
+        </div>
+        <div class="imageSectionDesktop">
+            <div class="mainImg">
+                <img src="./images/image-product-1.jpg" alt="" id="mainImage">
+            </div>
+                <div class="opt"><img src="./images/image-product-2.jpg" alt="" class="option"></div>
+                <div class="opt"><img src="./images/image-product-3.jpg" alt="" class="option"></div>
+                <div class="opt"><img src="./images/image-product-4.jpg" alt="" class="option"></div>
+           
+        </div>
+
+        <aside class="standAloneGallery" id="standAlone">
+            <img src="./images/icon-close.svg" alt="close" class="close" id="stdCls">
+            <div class="navigationBts">
+                <button class="naBtn" id="stdNext"><img src="./images/icon-previous.svg" alt="previous"></button>
+                <button class="naBtn" id="stdPrev"><img src="./images/icon-next.svg" alt="next"></button>
+            </div>
+            <div class="imageSectionDesktop">
+                <div class="mainImg">
+                    <img src="./images/image-product-1.jpg" alt="" id="standAlonemain">
+                </div>
+                <div class="opt"><img src="./images/image-product-2.jpg" alt="" class="standoption"></div>
+                <div class="opt"><img src="./images/image-product-3.jpg" alt="" class="standoption"></div>
+                <div class="opt"><img src="./images/image-product-4.jpg" alt="" class="standoption"></div>
+            
+            </div>
+        </aside>
+        <div class="info">
+            <p class="companyName">SNEAKER COMPANY</p>
+            <section class="aboutProd">
+                <h2>Fall Limited Edition Sneakers</h2>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole. They'll withstand everything the weather can offer.</p>
+            </section>
+            <div class="price">
+                <p class="main">$125.00</p>
+                <p class="discount">50%</p>
+                <aside class="pre">$250.00</aside>
+            </div>
+            <div class="lower">
+                <div class="quantity">
+                    <button class="quantBtn" id="less"><img src="./images/icon-minus.svg" alt="minus"></button>
+                    <input type="number" value="0" name="quantity" class="quantInput" id="quantInput" min="0">
+                    <button class="quantBtn" id="more"><img src="./images/icon-plus.svg" alt="plus"></button>
+                </div>
+                <button class="buyBtn" id="buy" disabled><img src="./images/icon-cart copy.svg" alt="">Add to cart</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
