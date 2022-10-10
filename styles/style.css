@@ -25,6 +25,10 @@ body {
           flex-direction: column;
 }
 
+.inpLabel {
+  display: none;
+}
+
 .overflow {
   display: none;
   width: 100vw;
@@ -356,7 +360,7 @@ main .info .aboutProd {
   margin-top: .8rem;
 }
 
-main .info .aboutProd h2 {
+main .info .aboutProd h1 {
   font-size: 1.7rem;
 }
 
@@ -407,7 +411,6 @@ main .info .quantity {
 
 main .info .quantity .quantBtn {
   border: none;
-  background-color: white;
 }
 
 main .info .quantity .quantInput {
@@ -520,6 +523,7 @@ main .info .buyBtn:is(:disabled) {
     margin-left: 65%;
   }
   body main {
+    height: auto;
     width: 90%;
     margin: auto;
     margin-top: 1rem;
@@ -551,7 +555,7 @@ main .info .buyBtn:is(:disabled) {
   body main .standAloneGallery .navigationBts {
     width: 110%;
     position: absolute;
-    top: 10rem;
+    top: 13rem;
     left: -1.2rem;
     z-index: 1500;
     display: -webkit-box;
@@ -577,10 +581,10 @@ main .info .buyBtn:is(:disabled) {
     display: grid;
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    -ms-grid-rows: 23rem 7rem;
-        grid-template-rows: 23rem 7rem;
+    -ms-grid-rows: 28rem 9rem;
+        grid-template-rows: 28rem 9rem;
     width: 50%;
-    padding: 1rem 5rem 0;
+    padding: 0 5rem;
     gap: 1rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -641,6 +645,18 @@ main .info .buyBtn:is(:disabled) {
   body main .info {
     width: 50%;
     padding: 5rem 3rem;
+  }
+  body main .info .companyName {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+  }
+  body main .info .aboutProd h1 {
+    font-size: 2rem;
+  }
+  body main .info .aboutProd p {
+    margin-top: 2rem;
+    line-height: 2rem;
+    font-size: 1.1rem;
   }
   body main .info .price {
     margin-top: 3rem;
