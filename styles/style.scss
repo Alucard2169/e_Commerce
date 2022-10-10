@@ -20,6 +20,10 @@ body {
     flex-direction: column;
 }
 
+.inpLabel {
+    display: none;
+}
+
 .overflow {
     display: none;
     width: 100vw;
@@ -311,7 +315,7 @@ main {
         .aboutProd {
             margin-top: .8rem;
 
-            h2 {
+            h1 {
                 font-size: 1.7rem;
             }
 
@@ -478,6 +482,7 @@ main {
         }
 
         main {
+            height: auto;
             width: 90%;
             margin: auto;
             margin-top: 1rem;
@@ -509,7 +514,7 @@ main {
                 .navigationBts {
                     width: 110%;
                     position: absolute;
-                    top: 10rem;
+                    top: 13rem;
                     left: -1.2rem;
                     z-index: 1500;
                     display: flex;
@@ -533,9 +538,9 @@ main {
             .imageSectionDesktop {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                grid-template-rows: 23rem 7rem;
+                grid-template-rows: 28rem 9rem;
                 width: 50%;
-                padding: 1rem 5rem 0;
+                padding: 0 5rem;
                 gap: 1rem;
                 justify-content: space-between;
 
@@ -544,6 +549,7 @@ main {
                     grid-row: 1;
                     width: 100%;
                     height: 100%;
+
 
                     img {
                         width: 100%;
@@ -601,6 +607,23 @@ main {
             .info {
                 width: 50%;
                 padding: 5rem 3rem;
+
+                .companyName {
+                    font-size: 1.1rem;
+                    margin-bottom: 1rem;
+                }
+
+                .aboutProd {
+                    h1 {
+                        font-size: 2rem;
+                    }
+
+                    p {
+                        margin-top: 2rem;
+                        line-height: 2rem;
+                        font-size: 1.1rem;
+                    }
+                }
 
                 .price {
                     margin-top: 3rem;
